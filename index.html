@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIYAS SERVICES</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f2f4fa;color:#2a3d58;font-family:Arial,"Noto Sans Bengali",sans-serif}
+a{text-decoration:none}
+.top{background:#fff;border-bottom:2px solid #ff3155}
+.brand{text-align:center;padding:24px 8px 18px;font:800 30px Georgia,serif}
+.brand .p{color:#293b55}.brand .s{color:#ed3155}.bolt{font-size:35px}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 16px 14px}
+.actions a{color:#fff;background:linear-gradient(135deg,#ff4163,#ff3155);padding:15px 5px;border-radius:12px;text-align:center;font-weight:700;box-shadow:0 5px 12px #ff315533}
+.container{max-width:760px;margin:auto;padding:0 20px}
+.hero{text-align:center;padding:34px 5px 20px}
+.hero h1{margin:0 0 8px;font:800 28px Georgia,serif}
+.hero p{margin:0;color:#8b95a6;font-size:16px}
+.title{text-align:center;font:800 27px Georgia,serif;margin:22px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:110px}
+.service{text-align:center;color:#293b55;cursor:pointer}
+.icon{height:170px;border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:65px;box-shadow:0 8px 22px #23325022;transition:.2s}
+.service:active .icon{transform:scale(.97)}
+.label{font:700 15px Georgia,serif;margin-top:9px}
+.p1{background:linear-gradient(145deg,#ad347e,#ef005b)}
+.p2{background:linear-gradient(145deg,#fff,#f2f0e9)}
+.p3{background:linear-gradient(145deg,#344f87,#12264d);border:2px solid #d7ae35}
+.p5{background:linear-gradient(145deg,#53d0e8,#22a9d0)}
+.page{display:none;min-height:calc(100vh - 150px);padding-bottom:110px}
+.page.active{display:block}
+.page-head{text-align:center;padding:34px 0 26px}
+.page-icon{width:108px;height:108px;margin:auto;border-radius:25px;display:flex;align-items:center;justify-content:center;font-size:48px;box-shadow:0 12px 25px #23325024}
+.page-head h1{font:800 30px Georgia,serif;margin:25px 0 8px}
+.page-head p{color:#8b95a6;font-size:16px;margin:0}
+.card{background:#fff;border-radius:22px;padding:24px;box-shadow:0 8px 25px #23325016;margin-bottom:18px}
+.card.dark{background:linear-gradient(145deg,#182b49,#10213c);color:#fff}
+.card h2{font:800 25px Georgia,serif;margin:0 0 20px}
+.card p{color:#7d8798;font-size:18px;line-height:1.65}
+.card.dark p{color:#dbe2ee}
+.order{display:block;text-align:center;color:white;background:#f3295c;border-radius:16px;padding:16px;font-size:19px;font-weight:800;margin-top:22px}
+.back{display:inline-block;color:#263a55;background:#fff;padding:10px 16px;border-radius:10px;font-weight:700;margin-top:4px}
+.option-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.option{display:block;text-align:center;color:#fff;background:linear-gradient(135deg,#ff4163,#a82b8f);border-radius:15px;padding:15px 8px;font-weight:800}
+.country-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.country{background:#203654;border:1px solid #45617f;color:#fff;border-radius:12px;padding:11px 15px;font-weight:700}
+.warning{margin-top:20px;border:1px solid #7a7133;border-radius:22px;padding:20px;background:#17222b;color:#fff}
+.bottom{position:fixed;z-index:5;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e5e7ed;box-shadow:0 -4px 16px #0000000d}
+.bottom-inner{max-width:760px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr)}
+.bottom a{color:#687181;text-align:center;padding:10px 4px 12px;font-size:13px;font-weight:700;cursor:pointer}
+.bottom a.active{color:#ed3155}.bi{display:block;font-size:25px;margin-bottom:3px}
+@media(max-width:520px){
+.brand{font-size:27px}.hero h1,.title{font-size:24px}.grid{gap:14px;grid-template-columns:repeat(2,1fr)}
+.icon{height:140px;font-size:53px;border-radius:18px}.label{font-size:13px}
+.container{padding:0 15px}.page-head h1{font-size:28px}
+.option-grid{gap:10px}.option{font-size:15px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="bolt">⚡</span> <span class="p">PIYAS</span> <span class="s">SERVICES</span></div>
+  <nav class="actions">
+    <a href="https://t.me/onlynarutos" target="_blank">✈️ Telegram</a>
+    <a href="https://t.me/bbfamaus" target="_blank">👥 Join Group</a>
+    <a id="topWhatsapp" href="#" target="_blank">💬 WhatsApp</a>
+  </nav>
+</header>
+<main id="homePage">
+<div class="container">
+<section class="hero">
+  <h1>🌟 আমাদের ডিজিটাল সেবাসমূহ</h1>
+  <p>আপনার প্রয়োজনীয় সার্ভিস নির্বাচন করুন</p>
+</section>
+<h2 class="title">🎁 SPECIAL OFFER 🎁</h2>
+<section class="grid">
+  <div class="service" onclick="showService(0)"><div class="icon p1">▶️</div><div class="label">Google Play Points</div></div>
+  <div class="service" onclick="showService(1)"><div class="icon p2">🏅</div><div class="label">Play Points Park ON</div></div>
+  <div class="service" onclick="showService(2)"><div class="icon p3">🏷️</div><div class="label">Google Play Offer</div></div>
+  <div class="service" onclick="showService(3)"><div class="icon p5">➤</div><div class="label">Telegram Stars</div></div>
+</section>
+</div>
+</main>
+<main id="servicePage" class="page">
+<div class="container">
+<section class="page-head">
+  <div id="serviceIcon" class="page-icon"></div>
+  <h1 id="serviceTitle"></h1>
+  <p id="serviceSubtitle"></p>
+</section>
+<section id="serviceCard" class="card">
+  <h2 id="cardTitle"></h2>
+  <div id="serviceBody"></div>
+  <a id="orderButton" class="order" href="#" target="_blank">🛒 সরাসরি যোগাযোগ করুন</a>
+</section>
+<a class="back" href="javascript:void(0)" onclick="showHome()">← সব সার্ভিস দেখুন</a>
+</div>
+</main>
+<nav class="bottom">
+<div class="bottom-inner">
+  <a id="navHome" class="active" onclick="showHome()"><span class="bi">⌂</span>Home</a>
+  <a onclick="showHome();window.scrollTo(0,360)"><span class="bi">📖</span>Tutorial</a>
+  <a id="navContact" href="#" target="_blank"><span class="bi">🎧</span>Contact Us</a>
+</div>
+</nav>
+<script>
+const WHATSAPP_NUMBER = "17476006768";
+const services = [
+  {name:"Google Play Points", icon:"🎮", cls:"p3", subtitle:"Google Play Points সংক্রান্ত সার্ভিস", type:"points"},
+  {name:"Play Points Park ON", icon:"🏅", cls:"p1", subtitle:"Park ON সংক্রান্ত সার্ভিস", type:"park"},
+  {name:"Google Play Offer", icon:"🏷️", cls:"p3", subtitle:"বিভিন্ন Google Play Discount Offer", type:"offer"},
+  {name:"Telegram Stars", icon:"⭐", cls:"p5", subtitle:"Telegram Stars কেনা ও বিক্রয় সার্ভিস", type:"stars"}
+];
+function waLink(serviceName){
+  const text = encodeURIComponent("আসসালামু আলাইকুম, আমি " + serviceName + " সার্ভিসটি সম্পর্কে জানতে চাই।");
+  return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + text;
+}
+function bodyFor(type){
+  if(type==="stars"){
+    return `<p>প্রথমে আপনি কী করতে চান সেটি নির্বাচন করুন।</p>
+      <div class="option-grid">
+        <a class="option" href="${waLink("Telegram Stars কিনতে")}" target="_blank">🛒 Stars কিনুন</a>
+        <a class="option" href="${waLink("Telegram Stars বিক্রি করতে")}" target="_blank">💰 Stars বিক্রি করুন</a>
+      </div>`;
+  }
+  if(type==="park") return `<p>Play Points Park ON সংক্রান্ত বিস্তারিত জানতে আমাদের অ্যাডমিনদের সঙ্গে যোগাযোগ করুন।</p>`;
+  if(type==="offer"){
+    return `<p>আপনার প্রয়োজনীয় Offer নির্বাচন করুন।</p>
+      <div class="option-grid">
+        <a class="option" href="${waLink("Google Play $1 OFF")}" target="_blank">💵 $1 OFF</a>
+        <a class="option" href="${waLink("Google Play $2 OFF")}" target="_blank">💵 $2 OFF</a>
+        <a class="option" href="${waLink("Google Play $4 OFF")}" target="_blank">💵 $4 OFF</a>
+        <a class="option" href="${waLink("Google Play 95% OFF")}" target="_blank">🔥 95% OFF</a>
+      </div>
+      <textarea id="customOffer" placeholder="আপনার প্রয়োজনীয় Custom Offer লিখুন..." style="width:100%;min-height:100px;margin-top:15px;padding:12px;border:1px solid #ddd;border-radius:14px;font-size:15px;font-family:sans-serif;"></textarea>
+      <a class="order" href="#" onclick="sendCustomOffer(event)" style="margin-top:10px;">📝 Custom Offer পাঠান</a>`;
+  }
+  return `<p>Google Play Points সংক্রান্ত বিভিন্ন সার্ভিসের বিস্তারিত জানতে আমাদের সঙ্গে যোগাযোগ করুন।</p>
+    <div class="warning">🔒 <b>নিরাপত্তা সতর্কতা:</b><br><br>Google-এর নিয়ম অনুযায়ী নিরাপত্তা বজায় রাখুন। কাউকে আপনার Gmail Password বা OTP দেবেন না।</div>
+    <div class="country-grid">
+      <span class="country">🇯🇵 Japan</span><span class="country">🇭🇰 Hong Kong</span><span class="country">🇸🇦 Saudi Arabia</span><span class="country">🇺🇸 USA</span><span class="country">🇬🇧 UK</span>
+    </div>`;
+}
+function showService(i){
+  const s=services[i];
+  document.getElementById("homePage").style.display="none";
+  document.getElementById("servicePage").classList.add("active");
+  const icon=document.getElementById("serviceIcon");
+  icon.className="page-icon "+s.cls; icon.textContent=s.icon;
+  document.getElementById("serviceTitle").textContent=s.name;
+  document.getElementById("serviceSubtitle").textContent=s.subtitle;
+  document.getElementById("cardTitle").textContent=(s.type==="stars"?"⭐ ":s.type==="offer"?"🎁 ":s.type==="park"?"🏅 ":"🎮 ")+s.name;
+  document.getElementById("serviceBody").innerHTML=bodyFor(s.type);
+  const orderBtn=document.getElementById("orderButton");
+  if(s.type==="offer"||s.type==="stars") orderBtn.style.display="none";
+  else {orderBtn.style.display="block";orderBtn.href=waLink(s.name);}
+  document.getElementById("navHome").classList.remove("active");
+  window.scrollTo(0,0);
+}
+function sendCustomOffer(e){
+  e.preventDefault();
+  const value=document.getElementById("customOffer").value.trim();
+  const text=value?"আসসালামু আলাইকুম, আমার Custom Google Play Offer দরকার: "+value:"আসসালামু আলাইকুম, আমার একটি Custom Google Play Offer দরকার।";
+  window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(text),"_blank");
+}
+function showHome(){
+  document.getElementById("servicePage").classList.remove("active");
+  document.getElementById("homePage").style.display="block";
+  document.getElementById("navHome").classList.add("active");
+  window.scrollTo(0,0);
+}
+document.getElementById("topWhatsapp").href=waLink("সার্ভিস");
+document.getElementById("navContact").href=waLink("সার্ভিস");
+</script>
+</body>
+</html>
